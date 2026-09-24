@@ -13,6 +13,13 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="page-loader" aria-live="polite" aria-label="Loading portfolio">
+      <div class="loader-label">Loading portfolio</div>
+      <div class="loader-track" aria-hidden="true">
+        <span class="loader-bar"></span>
+      </div>
+    </div>
+
     <header class="site-header">
       <div class="brand-lockup">
         <a class="wordmark" href="#top" aria-label="Akil Grunau portfolio home">AKIL GRUNAU<br /><span>PORTFOLIO</span></a>
@@ -39,7 +46,7 @@
           </div>
         </div>
         <div class="hero-image-wrap">
-          <video class="hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1800&q=85">
+          <video class="hero-video" autoplay muted loop playsinline>
             <source src="forwebsite.mp4" type="video/mp4" />
           </video>
           <div class="image-caption"><span>Moving image / 01</span><span>Lasalle, 2026</span></div>
