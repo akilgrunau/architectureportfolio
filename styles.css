@@ -53,7 +53,7 @@ h1 em, h2 em { font-family: var(--serif); font-style: normal; font-weight: 500; 
 .circle-link { align-items: center; border: 1px solid var(--ink); border-radius: 50%; display: flex; height: 40px; justify-content: center; transition: background .25s, color .25s; width: 40px; }
 .circle-link:hover { background: var(--ink); color: var(--paper); }
 .circle-link span { font-size: 20px; }
-.hero-image-wrap { height: 100vh; position: relative; width: 100%; z-index: 0; }
+.hero-image-wrap { background-image: url("park%20view%20evening.png"); background-position: center; background-repeat: no-repeat; background-size: cover; height: 100vh; position: relative; width: 100%; z-index: 0; }
 .hero-video { filter: saturate(.72); height: 100%; object-fit: cover; opacity: 1; width: 100%; }
 .image-caption { bottom: 28px; color: white; display: flex; justify-content: space-between; left: 4vw; position: absolute; right: 4vw; }
 
