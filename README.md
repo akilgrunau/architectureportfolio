@@ -5,3 +5,4 @@ pull origin main
 checkout main
 pull
 commit
+.
