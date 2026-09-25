@@ -76,6 +76,28 @@ h1 em, h2 em { font-family: var(--serif); font-style: normal; font-weight: 500; 
 .maquette-frame img { display: block; height: 75%; left: 50%; object-fit: contain; position: absolute; top: 50%; transform: translate(-50%, -50%); width: 75%; }
 .maquette-caption { bottom: 20px; color: white; display: flex; font-family: var(--mono); font-size: 10px; justify-content: space-between; left: 24px; position: absolute; right: 24px; text-transform: uppercase; }
 
+.project-gallery { padding: 62px 9vw 40px; }
+.gallery-heading { align-items: end; }
+.gallery-controls { display: flex; gap: 8px; justify-content: flex-end; }
+.gallery-shell { background: #d8cbe8; margin-top: 34px; min-height: clamp(420px, 70vh, 760px); overflow: hidden; position: relative; }
+.gallery-slide { display: none; height: clamp(420px, 70vh, 760px); position: relative; width: 100%; }
+.gallery-slide.is-active { display: block; }
+.gallery-slide img { height: 100%; object-fit: cover; width: 100%; }
+.gallery-slide figcaption {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.54));
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  font-family: var(--mono);
+  font-size: 10px;
+  justify-content: space-between;
+  letter-spacing: .02em;
+  padding: 18px 18px 16px;
+  position: absolute;
+  text-transform: uppercase;
+  width: 100%;
+}
+
 .projects { padding: 62px 9vw 40px; }
 .section-heading { display: grid; grid-template-columns: 1fr 2fr 1fr; }
 .section-heading .section-index { margin: 4px 0 0; }
@@ -144,6 +166,9 @@ h2 { font-size: clamp(48px, 7vw, 105px); margin: 0; }
   .hero-image-wrap { height: 100vh; }
   .intro-band, .section-heading { display: block; }
   .intro-band { padding: 55px 7vw 62px; }
+  .gallery-heading { display: block; }
+  .gallery-controls { justify-content: flex-start; margin-top: 26px; }
+  .gallery-shell, .gallery-slide { min-height: 420px; height: 58vh; }
   .principles-intro { margin-top: 34px; }
   .principles-grid { display: block; margin-top: 40px; }
   .principle + .principle { margin-top: 38px; }
